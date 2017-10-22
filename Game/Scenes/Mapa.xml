@@ -16,7 +16,7 @@
 				<string> "transform/pos" </string>
 				<string> "transform/scale" </string>
 				<string> "Node2D" </string>
-				<string> "Node" </string>
+				<string> "Mapa normal" </string>
 			</string_array>
 			<string> "node_count" </string>
 			<int> 2 </int>
