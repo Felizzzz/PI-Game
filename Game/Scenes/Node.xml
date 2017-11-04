@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="3" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
-	<ext_resource path="res://Scenes/Player.xml" type="PackedScene" index="1"></ext_resource>
+<resource_file type="PackedScene" subresource_count="4" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
 	<ext_resource path="res://Scenes/Criar mapa.xml" type="TileSet" index="0"></ext_resource>
+	<ext_resource path="res://Scenes/Bomb.xml" type="PackedScene" index="2"></ext_resource>
+	<ext_resource path="res://Scenes/Player.xml" type="PackedScene" index="1"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
@@ -37,15 +38,15 @@
 				<string> "transform/pos" </string>
 				<string> "Player" </string>
 				<string> "Paredes de baixo" </string>
-				<string> "transform/scale" </string>
+				<string> "Bomb" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 6 </int>
+			<int> 7 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="168"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 18, 2, -1, 15, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 10, 0, 0, 0, 18, 19, -1, 15, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 11, 0, 0, 0, 18, 20, -1, 16, 21, 12, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 13, 0, 3, 0, 2147483647, 22, 14, 1, 21, 15, 0, 3, 0, 18, 23, -1, 16, 24, 16, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 17, 0 </int_array>
+			<int_array  len="173"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 18, 2, -1, 15, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 10, 0, 0, 0, 18, 19, -1, 15, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 11, 0, 0, 0, 18, 20, -1, 16, 21, 12, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 13, 0, 3, 0, 2147483647, 22, 14, 1, 21, 15, 0, 3, 0, 18, 23, -1, 15, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 0, 10, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 9, 16, 9, 17, 16, 0, 3, 0, 2147483647, 24, 17, 0, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="18" shared="false">
 				<int> 0 </int>
@@ -64,8 +65,8 @@
 				<int_array  len="114"> 					0, 4, 1, 4, 2, 4, 3, 4, 4, 4, 5, 4, 6, 4, 7, 4, 8, 4, 9, 4, 10, 4, 11, 4, 12, 4, 13, 4, 14, 4, 15, 4, 16, 4, 17, 4, 18, 4, 19, 4, 20, 4, 21, 4, 22, 4, 23, 4, 24, 4, 65536, 4, 65560, 4, 131072, 4, 131096, 4, 196608, 4, 196632, 4, 262144, 4, 262168, 4, 327680, 4, 327704, 4, 393216, 4, 393240, 4, 458752, 4, 458776, 4, 524288, 4, 524312, 4, 589824, 4, 589848, 4, 655360, 4, 655384, 4, 720896, 4, 720920, 4, 786432, 4, 786456, 4, 851968, 4, 851992, 4, 917504, 4, 917528, 4, 983040, 4, 983064, 4, 1048576, 4, 1048600, 4 </int_array>
 				<resource  external="1">  </resource>
 				<vector2> 45.7838, 49.5141 </vector2>
-				<vector2> 1, 1 </vector2>
 				<int_array  len="46"> 					1048577, 4, 1048578, 4, 1048579, 4, 1048580, 4, 1048581, 4, 1048582, 4, 1048583, 4, 1048584, 4, 1048585, 4, 1048586, 4, 1048587, 4, 1048588, 4, 1048589, 4, 1048590, 4, 1048591, 4, 1048592, 4, 1048593, 4, 1048594, 4, 1048595, 4, 1048596, 4, 1048597, 4, 1048598, 4, 1048599, 4 </int_array>
+				<resource  external="2">  </resource>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>

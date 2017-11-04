@@ -1,6 +1,9 @@
 extends KinematicBody2D
 
 export var MOTION_SPEED = 100;
+export (PackedScene) var bomb
+onready var bomb_container = get_node("bomb_container")
+onready var bomb_timer=get_node("bomb_timer")
 const IDLE_SPEED=5
 
 var RayNode
@@ -19,6 +22,9 @@ func _ready():
 func _fixed_process(delta):
 	var MOTION=Vector2()
 	
+	if (Input.is_action_pressed("ui_accept")):
+		if bomb_timer.get_time_left()==0:
+			shoot()
 	if (Input.is_action_pressed("ui_up")):
 		MOTION += Vector2(0,-1)
 		RayNode.set_rotd(180)
@@ -64,4 +70,8 @@ func _fixed_process(delta):
 	if anim != animNew:
 		animNew=anim
 		PlayerAnimNode.play(anim)
-	
+func shoot():
+	bomb_timer.start()
+	var b=bomb.instance()
+	bomb_container.add_child(b)
+	b.start_at(get_node("position_b").get_global_pos())
