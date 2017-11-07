@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="17" version="2.1" version_name="Godot Engine v2.1.4.stable.official">
-	<ext_resource path="res://Scripts/Player.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://Scenes/Bomb.xml" type="PackedScene" index="1"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_frente_caminhar.png" type="Texture" index="3"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_tras_caminhar.png" type="Texture" index="11"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_tras_parado.png" type="Texture" index="9"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_direita_caminhar_1.png" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_esquerda_parado.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_direita_caminhar_2.png" type="Texture" index="7"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_frente_parado.png" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_direita_parado.png" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_esquerda_caminhar_1.png" type="Texture" index="12"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_esquerda_caminhar_2.png" type="Texture" index="13"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_frente_caminhar_1.png" type="Texture" index="4"></ext_resource>
-	<ext_resource path="res://imagens/Boneco_tras_caminhar_1.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_direita_caminhar_1.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_frente_parado.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_direita_parado.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_esquerda_caminhar_1.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_esquerda_caminhar_2.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_frente_caminhar_1.png" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_tras_caminhar_1.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_esquerda_parado.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_frente_caminhar.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_tras_parado.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_direita_caminhar_2.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://imagens/Boneco_tras_caminhar.png" type="Texture" index="13"></ext_resource>
+	<ext_resource path="res://Scripts/Player.gd" type="Script" index="0"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 27.9328, 30.1339 </vector2>
@@ -29,31 +29,26 @@
 				<string> "loop" </string>
 				<bool> True </bool>
 				<string> "name" </string>
-				<string> "Idle_L" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="6" shared="false">
-					<resource  external="3">  </resource>
-					<resource  external="4">  </resource>
-					<resource  external="5">  </resource>
-					<resource  external="3">  </resource>
-					<resource  external="4">  </resource>
-					<resource  external="5">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Walk_D" </string>
+				<string> "Idle_U" </string>
 				<string> "speed" </string>
 				<real> 5 </real>
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
 				<array  len="1" shared="false">
-					<resource  external="6">  </resource>
+					<resource  external="3">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Idle_L" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="1" shared="false">
+					<resource  external="4">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -65,58 +60,12 @@
 			<dictionary  shared="false">
 				<string> "frames" </string>
 				<array  len="6" shared="false">
-					<resource  external="7">  </resource>
-					<resource  external="8">  </resource>
+					<resource  external="5">  </resource>
 					<resource  external="6">  </resource>
-					<resource  external="7">  </resource>
-					<resource  external="8">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="5">  </resource>
 					<resource  external="6">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Walk_R" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="1" shared="false">
-					<resource  external="9">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Idle_U" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="6" shared="false">
-					<resource  external="10">  </resource>
-					<resource  external="11">  </resource>
-					<resource  external="9">  </resource>
-					<resource  external="10">  </resource>
-					<resource  external="11">  </resource>
-					<resource  external="9">  </resource>
-				</array>
-				<string> "loop" </string>
-				<bool> True </bool>
-				<string> "name" </string>
-				<string> "Walk_U" </string>
-				<string> "speed" </string>
-				<real> 5 </real>
-			</dictionary>
-			<dictionary  shared="false">
-				<string> "frames" </string>
-				<array  len="6" shared="false">
-					<resource  external="12">  </resource>
-					<resource  external="13">  </resource>
-					<resource  external="2">  </resource>
-					<resource  external="12">  </resource>
-					<resource  external="13">  </resource>
-					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
@@ -127,8 +76,59 @@
 			</dictionary>
 			<dictionary  shared="false">
 				<string> "frames" </string>
+				<array  len="6" shared="false">
+					<resource  external="7">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+					<resource  external="7">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_D" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="6" shared="false">
+					<resource  external="10">  </resource>
+					<resource  external="11">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="10">  </resource>
+					<resource  external="11">  </resource>
+					<resource  external="4">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_R" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="6" shared="false">
+					<resource  external="12">  </resource>
+					<resource  external="13">  </resource>
+					<resource  external="2">  </resource>
+					<resource  external="12">  </resource>
+					<resource  external="13">  </resource>
+					<resource  external="2">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "Walk_U" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+			<dictionary  shared="false">
+				<string> "frames" </string>
 				<array  len="1" shared="false">
-					<resource  external="5">  </resource>
+					<resource  external="9">  </resource>
 				</array>
 				<string> "loop" </string>
 				<bool> True </bool>
