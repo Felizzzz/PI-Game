@@ -33,8 +33,8 @@ var sfx_volume = 1
 
 var nb_players = 1 
 var nb_lives = 1 
-var collectibles = { 'types': ["bomb_increase", "flame_increase", "speed_increase", "speed_decrease", "confusion", "life_increase", "kick_skill"],
-                     'freq': [100, 100, 70, 50, 30, 5*nb_lives, 30] }
+var collectibles = { 'types': ["bomb_increase", "flame_increase", "speed_increase", "speed_decrease", "confusion","key", "life_increase", "kick_skill"],
+                     'freq': [100, 100, 70, 50, 30, 50,5*nb_lives, 30] }
 func _ready():
 	randomize()
 	load_config()

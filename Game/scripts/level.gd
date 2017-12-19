@@ -41,3 +41,8 @@ func tile_center_pos(absolute_pos):
 func play_sound(sound):
 	if global.sfx:
 		get_node("SamplePlayer").play(sound)
+
+
+func _on_Door_area_enter( area ):
+	if area.get_name()== "player_area" and get_node("/root/global_key").get_key() == 1:
+				get_tree().change_scene_to(global.menu_scene)

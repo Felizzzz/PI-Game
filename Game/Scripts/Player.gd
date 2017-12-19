@@ -137,14 +137,6 @@ func die():
 			bomb.player = null
 		dead = true
 		var players = level.player_manager.get_children()
-		if players.size() == 2:
-			var winner
-			if self != players[0]:
-				winner = 0
-			else:
-				winner = 1
-			gameover.get_node("Label").set_text("Player " + str(players[winner].id) + " wins!")
-			gameover.show()
 	else:
 		get_node("TimerRespawn").start()
 func _on_TimerPowerup_timeout():

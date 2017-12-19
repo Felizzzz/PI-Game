@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=1]
+[gd_scene load_steps=15 format=1]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/goblin-blue.tres" type="SpriteFrames" id=2]
@@ -163,6 +163,12 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 0.501961, 1, 1, 1 ), Color( 1, 0.501961, 1, 1 ), Color( 1, 1, 0.501961, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
+[sub_resource type="CapsuleShape2D" id=11]
+
+custom_solver_bias = 0.0
+radius = 10.6912
+height = 10.27
+
 [node name="Player" type="KinematicBody2D"]
 
 input/pickable = false
@@ -185,7 +191,6 @@ animation = "default"
 
 [node name="DeathSprite" type="AnimatedSprite" parent="."]
 
-visibility/visible = false
 z/z = 1
 frames = ExtResource( 3 )
 animation = "default"
@@ -193,7 +198,6 @@ frame = 7
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
-visibility/visible = false
 build_mode = 0
 polygon = Vector2Array( -9.33636, -8.44761, -9.59988, 6.57302, -5.12004, 13.6881, 7.00188, 13.6881, 10.1641, 8.15414, 10.6912, -7.92057, 5.9478, -14.7721, -6.17412, -14.7721 )
 shape_range = Vector2( 0, 0 )
@@ -241,6 +245,24 @@ process_mode = 1
 wait_time = 3.0
 one_shot = true
 autostart = false
+
+[node name="player_area" type="Area2D" parent="."]
+
+input/pickable = true
+shapes/0/shape = SubResource( 11 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.527039, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_area"]
+
+transform/pos = Vector2( 0.527039, 0 )
+shape = SubResource( 11 )
+trigger = false
+_update_shape_index = 0
 
 [connection signal="finished" from="ActionAnimations" to="." method="_on_ActionAnimations_finished"]
 
