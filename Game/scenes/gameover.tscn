@@ -5,6 +5,7 @@
 
 [node name="Gameover" type="Node2D"]
 
+editor/display_folded = true
 visibility/visible = false
 
 [node name="Sprite" type="Sprite" parent="."]

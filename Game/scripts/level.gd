@@ -45,5 +45,6 @@ func play_sound(sound):
 
 func _on_Door_area_enter( area ):
 	if area.get_name()== "player_area" and get_node("/root/global_key").get_key() == 1:
-		get_tree().change_scene_to(global.menu_scene)
+		get_node("Gameover").set_hidden(false)
+		#get_tree().change_scene_to(global.menu_scene)
 		
