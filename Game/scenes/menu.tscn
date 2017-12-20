@@ -444,6 +444,7 @@ flat = false
 [node name="Player2" type="Control" parent="Controls"]
 
 editor/display_folded = true
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -547,6 +548,7 @@ flat = false
 [node name="Player3" type="Control" parent="Controls"]
 
 editor/display_folded = true
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -650,6 +652,7 @@ flat = false
 [node name="Player4" type="Control" parent="Controls"]
 
 editor/display_folded = true
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
